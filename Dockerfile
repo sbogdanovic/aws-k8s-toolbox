@@ -32,4 +32,4 @@ RUN git clone https://github.com/Zordrak/tfenv.git /apps/tfenv && \
 RUN tfenv install 0.12.24
 
 WORKDIR /workdir
-ENTRYPOINT /bin/bash
+CMD /bin/bash
