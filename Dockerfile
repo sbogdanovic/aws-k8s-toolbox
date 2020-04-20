@@ -29,7 +29,7 @@ ENV PATH=$PATH:$HOME/.istioctl/bin
 # Install tfenv and terraform
 RUN git clone https://github.com/Zordrak/tfenv.git /apps/tfenv && \
         ln -s /apps/tfenv/bin/* /usr/local/bin
-RUN tfenv install 0.12.24
+RUN tfenv install 0.12.24 && tfenv use 0.12.24
 
 WORKDIR /workdir
 CMD /bin/bash
